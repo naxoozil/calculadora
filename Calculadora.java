@@ -31,6 +31,9 @@ public class Calculadora
         }
     }
     
+    /**
+     * Imprime por pantalla la suma de los numeros del 0 al 10
+     */
     public void sumValues(){
         numero = 0;
         while(numero >= 0 && numero <= 9){
@@ -40,6 +43,10 @@ public class Calculadora
         }
     }
     
+    /**
+     * Muestra la suma de dos numeros dados por el usuario 
+     * en caso de que sean negativos retornara el valor -1
+     */
     public int sumValuesInterval(int parametroA, int parametroB){
         suma = 0;
         numero = 0;
@@ -68,6 +75,8 @@ public class Calculadora
         return suma;
         
     }
+    
+    
 }
 
 
