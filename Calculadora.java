@@ -40,6 +40,34 @@ public class Calculadora
         }
     }
     
+    public int sumValuesInterval(int parametroA, int parametroB){
+        suma = 0;
+        numero = 0;
+        if (parametroA > 0 && parametroB > 0){
+            if (parametroA < parametroB){
+                numero = parametroA;
+                while ( numero <= parametroB){
+                    suma = suma + numero;
+                    numero++;
+                }
+            }
+            if (parametroA > parametroB){
+                numero = parametroB;
+                while ( numero <= parametroA){
+                    suma = suma + numero;
+                    numero++;
+                }
+            }
+            if (parametroA == parametroB){
+                suma = parametroA;
+            }
+        }
+        else{
+            suma = -1;
+        }
+        return suma;
+        
+    }
 }
 
 
