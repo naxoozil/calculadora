@@ -10,13 +10,15 @@ public class Calculadora
     //guarda un numero
     private int numero;
     private int suma;
+    private boolean nPrimo;
     /**
      * Constructor for objects of class Calculadora
      */
     public Calculadora()
     {
         numero = 0; 
-        
+        suma = 0;
+        nPrimo = false;
     }
     
     /**
@@ -73,6 +75,19 @@ public class Calculadora
             suma = -1;
         }
         return suma;
+        
+    }
+    
+    public int isPrime(int n){
+        if (n > 0){
+            int numero = 2;
+            
+            while ((n % numero != 0)){
+                numero++;
+            }
+            nPrimo = true;
+        }
+        return nPrimo;
         
     }
     
