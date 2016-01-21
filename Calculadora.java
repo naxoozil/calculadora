@@ -9,13 +9,14 @@ public class Calculadora
 {
     //guarda un numero
     private int numero;
-
+    private int suma;
     /**
      * Constructor for objects of class Calculadora
      */
     public Calculadora()
     {
         numero = 0; 
+        
     }
     
     /**
@@ -27,6 +28,15 @@ public class Calculadora
             numero = numero + 5;
             System.out.println(numero);
         
+        }
+    }
+    
+    public void sumValues(){
+        numero = 0;
+        while(numero >= 0 && numero <= 9){
+            numero++;
+            suma = suma + numero;
+            System.out.println(suma);
         }
     }
     
