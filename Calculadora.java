@@ -78,21 +78,32 @@ public class Calculadora
         
     }
     
-    public int isPrime(int n){
-        if (n > 0){
+    public boolean isPrime(int n)
+    {
+        boolean primo = true;
+        if (n > 1)
+        {   
             int numero = 2;
-            
-            while ((n % numero != 0)){
-                numero++;
+            int resto = 0;
+            while (numero < n)
+            {
+                resto = n % numero;
+                numero = numero +1;
+                if (resto == 0)
+                {
+                    primo = false;
+                }
             }
-            nPrimo = true;
         }
-        return nPrimo;
-        
+        else
+        {
+            System.out.println("El numero tiene que ser mayor de 1");
+            primo = false;
+        }
+        return primo;
     }
-    
-    
 }
+
 
 
 
