@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Calculadora here.
  * 
@@ -102,24 +101,25 @@ public class Calculadora
         }
         return primo;
     }
+    
+    public int multiplicarDosNumeros(int a, int b){
+        int restar = b;
+        int sumar = a;
+        if(a > 0 && b > 0){
+            while(restar != (b - (b - 1))){
+                sumar = sumar + a;
+                restar = restar - 1;
+            }
+           
+        }
+        else if(a < 0 || b < 0){
+            sumar = -1;   
+            System.out.println("ERROR");
+        }
+        else {
+            sumar = 0;
+        }
+        return sumar;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
